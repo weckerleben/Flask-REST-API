@@ -1,0 +1,32 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API Documentation",
+    "version": "1.0.0",
+    "description": "Documentation for the Flask REST API"
+  },
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Get Hello World message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
