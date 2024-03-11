@@ -1,0 +1,20 @@
+# Archivos y carpetas generados por entornos de desarrollo
+venv/
+*.pyc
+__pycache__/
+
+# Archivos de configuración local
+.env
+
+# Carpetas de almacenamiento de archivos estáticos y generados dinámicamente
+/static/
+/uploads/
+
+# Archivos de registro y almacenamiento de datos local
+*.log
+*.db
+
+# Otros archivos y carpetas que no deben ser incluidos en el repositorio
+.DS_Store
+.idea/
+.vscode/
