@@ -35,13 +35,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: Set up Heroku CLI
-      uses: akhileshns/heroku-deploy@v3.13.15
-      with:
-        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
-
-    - name: Deploy to Heroku
-      run: |
-        heroku git:remote -a ${{ secrets.HEROKU_APP_NAME }}
-        git push heroku main
+#    - name: Set up Heroku CLI
+#      uses: akhileshns/heroku-deploy@v3.13.15
+#      with:
+#        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+#        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+#
+#    - name: Deploy to Heroku
+#      run: |
+#        heroku git:remote -a ${{ secrets.HEROKU_APP_NAME }}
+#        git push heroku main
