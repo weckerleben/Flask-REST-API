@@ -1,5 +1,5 @@
 import unittest
-from app import app
+from app.routes import app
 
 class TestApp(unittest.TestCase):
     def setUp(self):
@@ -9,7 +9,7 @@ class TestApp(unittest.TestCase):
         response = self.app.get('/')
         data = response.get_json()
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(data['message'], '¡Hola, mundo!')
+        self.assertEqual(data['message'], 'Hello, world!')
 
 if __name__ == '__main__':
     unittest.main()
